@@ -1,0 +1,592 @@
+# Virtual environment
+.env
+.venv
+
+# IDE
+.idea
+.vscode
+
+# Build
+build
+
+# Logs
+logs
+
+# Database
+*.db
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+*~
+
+# Temporary files
+*.__pycache__
+
+# System
+.DS_Store
