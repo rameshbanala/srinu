@@ -147,6 +147,47 @@ async def generate_quiz(
     )
 
 
+@router.get("/{quiz_id}", response_model=QuizResponse)
+async def get_quiz(
+    quiz_id: int,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user)
+):
+    """Get quiz by ID with questions"""
+    
+    quiz = db.query(Quiz).filter(
+        Quiz.id == quiz_id,
+        Quiz.user_id == current_user.id
+    ).first()
+    
+    if not quiz:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Quiz not found"
+        )
+    
+    # Get questions for this quiz's content
+    questions = db.query(Question).filter(
+        Question.content_id == quiz.content_id
+    ).limit(quiz.total_questions).all()
+    
+    question_responses = [QuestionResponse.model_validate(q) for q in questions]
+    
+    return QuizResponse(
+        id=quiz.id,
+        user_id=quiz.user_id,
+        content_id=quiz.content_id,
+        topic=quiz.topic,
+        total_questions=quiz.total_questions,
+        status=quiz.status,
+        score=quiz.score,
+        correct_answers=quiz.correct_answers,
+        started_at=quiz.started_at,
+        completed_at=quiz.completed_at,
+        questions=question_responses
+    )
+
+
 @router.post("/{quiz_id}/submit-answer", response_model=AnswerResult)
 async def submit_answer(
     quiz_id: int,
