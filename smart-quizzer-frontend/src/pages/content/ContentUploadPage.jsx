@@ -107,7 +107,7 @@ const ContentUploadPage = () => {
         <h1 className="text-4xl font-bold gradient-text mb-2">
           Upload Content
         </h1>
-        <p className="text-slate-600 dark:text-slate-400 mb-8">
+        <p className="text-slate-700 dark:text-slate-800 mb-8">
           Add study material to generate quizzes from
         </p>
 
@@ -125,7 +125,7 @@ const ContentUploadPage = () => {
                 className={`flex items-center gap-2 px-6 py-3 font-semibold transition-all ${
                   activeTab === tab.id
                     ? 'text-primary-600 border-b-2 border-primary-600'
-                    : 'text-slate-600 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200'
+                    : 'text-slate-700 dark:text-slate-800 hover:text-slate-800 dark:hover:text-slate-200'
                 }`}
               >
                 <tab.icon className="w-5 h-5" />
@@ -159,7 +159,7 @@ const ContentUploadPage = () => {
               />
 
               <div>
-                <label className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
+                <label className="block text-sm font-semibold text-slate-700 dark:text-slate-600 mb-2">
                   PDF File <span className="text-danger-500">*</span>
                 </label>
                 <div className="border-2 border-dashed border-slate-300 dark:border-slate-700 rounded-xl p-8 text-center hover:border-primary-500 transition-colors">
@@ -176,7 +176,7 @@ const ContentUploadPage = () => {
                   >
                     <Upload className="w-12 h-12 text-slate-400" />
                     <div>
-                      <p className="text-slate-700 dark:text-slate-300 font-medium">
+                      <p className="text-slate-700 dark:text-slate-600 font-medium">
                         {pdfFile ? pdfFile.name : 'Click to upload PDF'}
                       </p>
                       <p className="text-sm text-slate-500">Max file size: 10MB</p>
@@ -243,7 +243,7 @@ const ContentUploadPage = () => {
               />
 
               <div>
-                <label className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
+                <label className="block text-sm font-semibold text-slate-700 dark:text-slate-600 mb-2">
                   Text Content <span className="text-danger-500">*</span>
                 </label>
                 <textarea

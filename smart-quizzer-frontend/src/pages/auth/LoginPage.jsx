@@ -88,7 +88,7 @@ const LoginPage = () => {
           <h1 className="text-4xl font-bold gradient-text mb-2">
             Welcome Back
           </h1>
-          <p className="text-slate-600 dark:text-slate-400">
+          <p className="text-slate-700 dark:text-slate-800">
             Sign in to continue your learning journey
           </p>
         </div>
@@ -143,7 +143,7 @@ const LoginPage = () => {
           </form>
 
           <div className="mt-6 text-center">
-            <p className="text-slate-600 dark:text-slate-400">
+            <p className="text-slate-700 dark:text-slate-800">
               Don't have an account?{' '}
               <Link
                 to="/register"
@@ -170,7 +170,7 @@ const LoginPage = () => {
               className="text-center"
             >
               <div className="text-3xl mb-2">{feature.emoji}</div>
-              <p className="text-sm text-slate-600 dark:text-slate-400 font-medium">
+              <p className="text-sm text-slate-700 dark:text-slate-800 font-medium">
                 {feature.label}
               </p>
             </motion.div>

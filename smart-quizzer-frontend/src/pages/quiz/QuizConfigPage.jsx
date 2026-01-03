@@ -70,10 +70,10 @@ const QuizConfigPage = () => {
       <div className="container mx-auto px-4 py-8 max-w-2xl">
         <Card className="p-12 text-center">
           <Brain className="w-16 h-16 text-slate-400 mx-auto mb-4" />
-          <h3 className="text-xl font-semibold text-slate-700 dark:text-slate-300 mb-2">
+          <h3 className="text-xl font-semibold text-slate-700 dark:text-slate-600 mb-2">
             No content available
           </h3>
-          <p className="text-slate-600 dark:text-slate-400 mb-6">
+          <p className="text-slate-700 dark:text-slate-800 mb-6">
             Please upload some content first to generate quizzes
           </p>
           <Button variant="primary" onClick={() => navigate('/content/upload')}>
@@ -96,7 +96,7 @@ const QuizConfigPage = () => {
             Configure Quiz
           </h1>
         </div>
-        <p className="text-slate-600 dark:text-slate-400 mb-8">
+        <p className="text-slate-700 dark:text-slate-800 mb-8">
           Customize your quiz settings
         </p>
 
@@ -110,7 +110,7 @@ const QuizConfigPage = () => {
           <div className="space-y-6">
             {/* Content Selection */}
             <div>
-              <label className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
+              <label className="block text-sm font-semibold text-slate-700 dark:text-slate-600 mb-2">
                 Select Content <span className="text-danger-500">*</span>
               </label>
               <select
@@ -128,7 +128,7 @@ const QuizConfigPage = () => {
 
             {/* Number of Questions */}
             <div>
-              <label className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
+              <label className="block text-sm font-semibold text-slate-700 dark:text-slate-600 mb-2">
                 Number of Questions: {config.num_questions}
               </label>
               <input
@@ -147,7 +147,7 @@ const QuizConfigPage = () => {
 
             {/* Difficulty */}
             <div>
-              <label className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
+              <label className="block text-sm font-semibold text-slate-700 dark:text-slate-600 mb-2">
                 Difficulty Level
               </label>
               <div className="grid grid-cols-3 gap-3">
@@ -165,7 +165,7 @@ const QuizConfigPage = () => {
                     <span className={`font-semibold capitalize ${
                       config.difficulty === level
                         ? 'text-primary-700 dark:text-primary-300'
-                        : 'text-slate-600 dark:text-slate-400'
+                        : 'text-slate-700 dark:text-slate-800'
                     }`}>
                       {level}
                     </span>

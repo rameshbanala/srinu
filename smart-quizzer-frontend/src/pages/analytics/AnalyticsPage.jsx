@@ -65,7 +65,7 @@ const AnalyticsPage = () => {
         <h1 className="text-4xl font-bold gradient-text mb-2">
           Analytics Dashboard
         </h1>
-        <p className="text-slate-600 dark:text-slate-400 mb-8">
+        <p className="text-slate-700 dark:text-slate-800 mb-8">
           Track your learning progress and performance
         </p>
 
@@ -84,10 +84,10 @@ const AnalyticsPage = () => {
                     <stat.icon className={`w-6 h-6 text-${stat.color}-600`} />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-slate-800 dark:text-slate-100">
+                    <h3 className="text-2xl font-bold text-slate-900 dark:text-black">
                       {stat.value}
                     </h3>
-                    <p className="text-sm text-slate-600 dark:text-slate-400">
+                    <p className="text-sm text-slate-700 dark:text-slate-800">
                       {stat.label}
                     </p>
                   </div>
@@ -102,7 +102,7 @@ const AnalyticsPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
             {/* Progress Chart */}
             <Card className="p-6">
-              <h3 className="text-xl font-bold text-slate-800 dark:text-slate-100 mb-4">
+              <h3 className="text-xl font-bold text-slate-900 dark:text-black mb-4">
                 Progress Over Time
               </h3>
               <ResponsiveContainer width="100%" height={300}>
@@ -119,7 +119,7 @@ const AnalyticsPage = () => {
             {/* Topic Performance */}
             {analytics?.overview?.performance_by_topic && (
               <Card className="p-6">
-                <h3 className="text-xl font-bold text-slate-800 dark:text-slate-100 mb-4">
+                <h3 className="text-xl font-bold text-slate-900 dark:text-black mb-4">
                   Topic Performance
                 </h3>
                 <ResponsiveContainer width="100%" height={300}>
@@ -139,7 +139,7 @@ const AnalyticsPage = () => {
         {/* Topics Mastered & To Improve */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <Card className="p-6">
-            <h3 className="text-xl font-bold text-slate-800 dark:text-slate-100 mb-4">
+            <h3 className="text-xl font-bold text-slate-900 dark:text-black mb-4">
               Topics Mastered
             </h3>
             {analytics?.overview?.topics_mastered && analytics.overview.topics_mastered.length > 0 ? (
@@ -147,19 +147,19 @@ const AnalyticsPage = () => {
                 {analytics.overview.topics_mastered.map((topic) => (
                   <div key={topic} className="flex items-center gap-2">
                     <Award className="w-5 h-5 text-success-600" />
-                    <span className="text-slate-700 dark:text-slate-300">{topic}</span>
+                    <span className="text-slate-700 dark:text-slate-600">{topic}</span>
                   </div>
                 ))}
               </div>
             ) : (
-              <p className="text-slate-600 dark:text-slate-400">
+              <p className="text-slate-700 dark:text-slate-800">
                 Keep practicing to master topics!
               </p>
             )}
           </Card>
 
           <Card className="p-6">
-            <h3 className="text-xl font-bold text-slate-800 dark:text-slate-100 mb-4">
+            <h3 className="text-xl font-bold text-slate-900 dark:text-black mb-4">
               Topics to Improve
             </h3>
             {analytics?.overview?.topics_to_improve && analytics.overview.topics_to_improve.length > 0 ? (
@@ -167,12 +167,12 @@ const AnalyticsPage = () => {
                 {analytics.overview.topics_to_improve.map((topic) => (
                   <div key={topic} className="flex items-center gap-2">
                     <TrendingUp className="w-5 h-5 text-primary-600" />
-                    <span className="text-slate-700 dark:text-slate-300">{topic}</span>
+                    <span className="text-slate-700 dark:text-slate-600">{topic}</span>
                   </div>
                 ))}
               </div>
             ) : (
-              <p className="text-slate-600 dark:text-slate-400">
+              <p className="text-slate-700 dark:text-slate-800">
                 Great job! No topics need improvement.
               </p>
             )}

@@ -70,7 +70,7 @@ const ContentListPage = () => {
           <h1 className="text-4xl font-bold gradient-text mb-2">
             My Content
           </h1>
-          <p className="text-slate-600 dark:text-slate-400">
+          <p className="text-slate-700 dark:text-slate-800">
             Manage your study materials
           </p>
         </div>
@@ -84,10 +84,10 @@ const ContentListPage = () => {
       {content.length === 0 ? (
         <Card className="p-12 text-center">
           <FileText className="w-16 h-16 text-slate-400 mx-auto mb-4" />
-          <h3 className="text-xl font-semibold text-slate-700 dark:text-slate-300 mb-2">
+          <h3 className="text-xl font-semibold text-slate-700 dark:text-slate-600 mb-2">
             No content yet
           </h3>
-          <p className="text-slate-600 dark:text-slate-400 mb-6">
+          <p className="text-slate-700 dark:text-slate-800 mb-6">
             Upload your first study material to get started
           </p>
           <Link to="/content/upload">
@@ -117,11 +117,11 @@ const ContentListPage = () => {
                     </span>
                   </div>
 
-                  <h3 className="text-lg font-bold text-slate-800 dark:text-slate-100 mb-2">
+                  <h3 className="text-lg font-bold text-slate-900 dark:text-black mb-2">
                     {item.title}
                   </h3>
 
-                  <p className="text-sm text-slate-600 dark:text-slate-400 mb-4">
+                  <p className="text-sm text-slate-700 dark:text-slate-800 mb-4">
                     {item.word_count} words • {formatDate(item.created_at)}
                   </p>
 

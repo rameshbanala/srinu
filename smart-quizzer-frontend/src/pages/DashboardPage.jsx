@@ -113,7 +113,7 @@ const DashboardPage = () => {
             Welcome back, {user?.username}!
           </h1>
         </div>
-        <p className="text-slate-600 dark:text-slate-400 text-lg">
+        <p className="text-slate-800 dark:text-slate-900 text-lg font-medium">
           Ready to continue your learning journey?
         </p>
       </motion.div>
@@ -133,10 +133,10 @@ const DashboardPage = () => {
                   <stat.icon className="w-6 h-6 text-white" />
                 </div>
               </div>
-              <h3 className="text-3xl font-bold text-slate-800 dark:text-slate-100 mb-1">
+              <h3 className="text-3xl font-bold text-slate-800 dark:text-slate-500 mb-1">
                 {stat.value}
               </h3>
-              <p className="text-slate-600 dark:text-slate-400 text-sm font-medium">
+              <p className="text-slate-700 dark:text-slate-800 text-sm font-semibold">
                 {stat.label}
               </p>
             </Card>
@@ -146,7 +146,7 @@ const DashboardPage = () => {
 
       {/* Quick Actions */}
       <div className="mb-8">
-        <h2 className="text-2xl font-bold text-slate-800 dark:text-slate-100 mb-4">
+        <h2 className="text-2xl font-bold text-slate-900 dark:text-black mb-4">
           Quick Actions
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -160,10 +160,10 @@ const DashboardPage = () => {
               <Link to={action.link}>
                 <Card hover className="p-6 h-full">
                   <action.icon className={`w-12 h-12 text-${action.color}-600 mb-4`} />
-                  <h3 className="text-xl font-bold text-slate-800 dark:text-slate-100 mb-2">
+                  <h3 className="text-xl font-bold text-slate-900 dark:text-black mb-2">
                     {action.title}
                   </h3>
-                  <p className="text-slate-600 dark:text-slate-400 mb-4">
+                  <p className="text-slate-700 dark:text-slate-800 mb-4 font-medium">
                     {action.description}
                   </p>
                   <div className="flex items-center text-primary-600 font-semibold">
@@ -181,7 +181,7 @@ const DashboardPage = () => {
       {analytics?.overview?.total_quizzes > 0 && (
         <div>
           <div className="flex items-center justify-between mb-4">
-            <h2 className="text-2xl font-bold text-slate-800 dark:text-slate-100">
+            <h2 className="text-2xl font-bold text-slate-900 dark:text-black">
               Recent Activity
             </h2>
             <Link
@@ -202,10 +202,10 @@ const DashboardPage = () => {
                     className="flex items-center justify-between p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50"
                   >
                     <div>
-                      <h4 className="font-semibold text-slate-800 dark:text-slate-100">
+                      <h4 className="font-semibold text-slate-900 dark:text-black">
                         {quiz.topic || 'General Quiz'}
                       </h4>
-                      <p className="text-sm text-slate-600 dark:text-slate-400">
+                      <p className="text-sm text-slate-700 dark:text-slate-600">
                         {new Date(quiz.completed_at).toLocaleDateString()}
                       </p>
                     </div>
@@ -218,7 +218,7 @@ const DashboardPage = () => {
                 ))}
               </div>
             ) : (
-              <p className="text-center text-slate-600 dark:text-slate-400 py-8">
+              <p className="text-center text-slate-600 dark:text-slate-800 py-8">
                 No recent quizzes. Start your first quiz!
               </p>
             )}

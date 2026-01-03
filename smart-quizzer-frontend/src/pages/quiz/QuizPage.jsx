@@ -86,10 +86,10 @@ const QuizPage = () => {
       <div className="container mx-auto px-4 py-8 max-w-3xl">
         <Card className="p-8 text-center">
           <XCircle className="w-16 h-16 text-danger-500 mx-auto mb-4" />
-          <h2 className="text-2xl font-bold text-slate-800 dark:text-slate-100 mb-2">
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-black mb-2">
             Error Loading Quiz
           </h2>
-          <p className="text-slate-600 dark:text-slate-400 mb-6">{error}</p>
+          <p className="text-slate-700 dark:text-slate-800 mb-6">{error}</p>
           <Button variant="primary" onClick={() => navigate('/quiz/config')}>
             Back to Quiz Config
           </Button>
@@ -102,10 +102,10 @@ const QuizPage = () => {
     return (
       <div className="container mx-auto px-4 py-8 max-w-3xl">
         <Card className="p-8 text-center">
-          <h2 className="text-2xl font-bold text-slate-800 dark:text-slate-100 mb-2">
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-black mb-2">
             No Questions Available
           </h2>
-          <p className="text-slate-600 dark:text-slate-400 mb-6">
+          <p className="text-slate-700 dark:text-slate-800 mb-6">
             This quiz doesn't have any questions yet.
           </p>
           <Button variant="primary" onClick={() => navigate('/quiz/config')}>
@@ -123,7 +123,7 @@ const QuizPage = () => {
     <div className="container mx-auto px-4 py-8 max-w-3xl">
       {/* Progress Bar */}
       <div className="mb-8">
-        <div className="flex justify-between text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+        <div className="flex justify-between text-sm font-medium text-slate-700 dark:text-slate-600 mb-2">
           <span>Question {currentQuestionIndex + 1} of {quiz.questions.length}</span>
           <span>{Math.round(progress)}% Complete</span>
         </div>
@@ -159,7 +159,7 @@ const QuizPage = () => {
                   {currentQuestion.question_type === 'mcq' ? 'Multiple Choice' : 'True/False'}
                 </span>
               </div>
-              <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-50">
+              <h2 className="text-2xl font-bold text-slate-900 dark:text-black">
                 {currentQuestion.question_text}
               </h2>
             </div>
@@ -173,11 +173,15 @@ const QuizPage = () => {
                   disabled={!!feedback}
                   className={`w-full p-4 rounded-xl text-left transition-all border-2 ${
                     selectedAnswer === option
-                      ? 'border-primary-600 bg-primary-100 dark:bg-primary-900/40 shadow-md'
-                      : 'border-slate-300 dark:border-slate-600 hover:border-primary-400 hover:bg-slate-50 dark:hover:bg-slate-800'
+                      ? 'border-primary-600 bg-primary-50 dark:bg-primary-100 shadow-md'
+                      : 'border-slate-300 dark:border-slate-500 hover:border-primary-400 hover:bg-slate-100 dark:hover:bg-slate-200'
                   } ${feedback ? 'cursor-not-allowed opacity-75' : 'cursor-pointer'}`}
                 >
-                  <span className="font-medium text-slate-900 dark:text-slate-50">
+                  <span className={`font-semibold ${
+                    selectedAnswer === option
+                      ? 'text-primary-900 dark:text-primary-900'
+                      : 'text-slate-900 dark:text-slate-900'
+                  }`}>
                     {option}
                   </span>
                 </button>
@@ -210,12 +214,12 @@ const QuizPage = () => {
                   </span>
                 </div>
                 {!feedback.is_correct && (
-                  <p className="text-sm font-medium text-slate-900 dark:text-slate-100 mb-1">
+                  <p className="text-sm font-medium text-slate-900 dark:text-slate-500 mb-1">
                     Correct answer: <strong className="text-success-700 dark:text-success-400">{feedback.correct_answer}</strong>
                   </p>
                 )}
                 {feedback.explanation && (
-                  <p className="text-sm text-slate-800 dark:text-slate-200 mt-2 bg-white/50 dark:bg-slate-800/50 p-3 rounded-lg">
+                  <p className="text-sm text-slate-800 dark:text-slate-800 mt-2 bg-white/50 dark:bg-slate-800/50 p-3 rounded-lg">
                     💡 {feedback.explanation}
                   </p>
                 )}

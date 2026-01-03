@@ -129,7 +129,7 @@ const RegisterPage = () => {
           <h1 className="text-4xl font-bold gradient-text mb-2">
             Join Smart Quizzer
           </h1>
-          <p className="text-slate-600 dark:text-slate-400">
+          <p className="text-slate-700 dark:text-slate-800">
             Start your adaptive learning journey today
           </p>
         </div>
@@ -207,7 +207,7 @@ const RegisterPage = () => {
             />
 
             <div>
-              <label className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
+              <label className="block text-sm font-semibold text-slate-700 dark:text-slate-600 mb-2">
                 Skill Level <span className="text-danger-500">*</span>
               </label>
               <div className="grid grid-cols-3 gap-2">
@@ -228,7 +228,7 @@ const RegisterPage = () => {
                     <span className={`text-xs font-medium ${
                       formData.skill_level === value 
                         ? 'text-primary-700 dark:text-primary-300' 
-                        : 'text-slate-600 dark:text-slate-400'
+                        : 'text-slate-700 dark:text-slate-800'
                     }`}>
                       {key.charAt(0) + key.slice(1).toLowerCase()}
                     </span>
@@ -249,7 +249,7 @@ const RegisterPage = () => {
           </form>
 
           <div className="mt-6 text-center">
-            <p className="text-slate-600 dark:text-slate-400">
+            <p className="text-slate-700 dark:text-slate-800">
               Already have an account?{' '}
               <Link
                 to="/login"
